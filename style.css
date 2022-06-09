@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(233, 223, 223);
+}
+
+.container{
+    padding: 20px 100px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.description .title1{
+    color: hsl(229, 6%, 66%);
+}
+
+.description .title2{
+    color: hsl(234, 12%, 34%);
+    font-weight: bold;
+}
+
+.description .desc-p{
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+    text-align: center;
+}
+
+.container-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 450px;
+    gap: 10px;
+}
+
+.card{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.card#card-bottom{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: span 2;
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.card#card-right{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card#card-left{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.card#card-top{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.container-img{
+    width: 100%;
+    text-align: end;
+}
+
+.container-img img{
+    margin-top: 15px;
+}
+
+.card-title{
+    color: hsl(234, 12%, 34%);
+}
+
+.card-desc{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 600px){
+    .container-card{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .card{
+        height: 250px;
+    }
+
+    .container{
+        padding: 20px 30px;
+    }
+}
